@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;800;900&display=swap');
+
+
+
+:root {
+    --cor-primaria: #313131;
+    --cor-secundaria: #F6F1F1;
+    --cor-terceira: #F7E1AE;
+    --cor-quaternaria: #739165;
+
+    --font: 'Nunito Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-primaria);
+    box-sizing: border-box;
+    color: var(--cor-secundaria);
+}
+
+.cabecalho {
+    display: flex;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 60px;
+}
+
+.logo__nome {
+    font-family: var(--font);
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--cor-secundaria);
+    text-decoration: none;
+}
+
+.cabecalho__menu {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--font);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--cor-secundaria);
+    text-decoration: none;
+}
+
+.botao__menu {
+    display: none;
+}
+.menu__mobile {
+    display: none;
+}
+
+.apresentacao__perfil {
+    width: 300px;
+    height: 300px;
+    border: 10px solid var(--cor-quaternaria);
+    border-radius: 50%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(45, 44, 44, 0.19);
+
+}
+
+.apresentacao {
+    padding: 10% 14%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.apresentacao__titulo {
+    font-size: 2.25rem;
+    color: var(--cor-quaternaria);
+    font-family: var(--font);
+}
+
+.apresentacao__texto {
+    font-size: 1.4rem;
+    font-family: var(--font);
+}
+
+.apresentacao__texto mark {
+    background-color: var(--cor-quaternaria);
+}
+
+.apresentacao__texto1 strong {
+    color: var(--cor-quaternaria)
+}
+
+
+.apresentacao__botoes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.apresentacao__botoes__nav {
+    background-color: var(--cor-primaria);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border: 2px solid var(--cor-quaternaria);
+    width: 30%;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 1rem;
+    padding: 10px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--font);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(45, 44, 44, 0.19);
+}
+
+.apresentacao__botoes__nav:hover {
+    background-color: #4c5c44;
+    transition: 0.8s;
+}
+
+.apresentacao__redes {
+    display: flex;
+    gap: 14px;
+    padding: 18px 0;
+    
+}
+
+.apresentacao__redes_logo {
+    width: 30px;
+    height: 30px;
+}
+
+@media (max-width: 950px) {
+    .logo__nome {
+        font-size: 1.5rem;
+    }
+
+    .apresentacao__perfil {
+        width: 250px;
+        height: 250px;
+
+    }
+
+    .cabecalho {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .cabecalho__menu {
+        padding: 10px;;
+    }
+
+    .cabecalho__menu__link {
+        border: 2px solid var(--cor-quaternaria);
+        padding: 5px 5px;
+        font-size: 1.15rem;
+        text-align: center;
+    }
+    .apresentacao {
+        flex-direction: column;
+        
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+}
+
+@media (max-width: 580px) {
+    .cabecalho__menu__link {
+        font-size: 1rem;
+    }
+}
