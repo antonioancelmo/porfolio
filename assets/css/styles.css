@@ -90,7 +90,7 @@ body {
 }
 
 .apresentacao__texto {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-family: var(--font);
 }
 
@@ -98,7 +98,7 @@ body {
     background-color: var(--cor-quaternaria);
 }
 
-.apresentacao__texto1 strong {
+.apresentacao__texto strong {
     color: var(--cor-quaternaria)
 }
 
@@ -144,6 +144,15 @@ body {
     height: 30px;
 }
 
+.rodape {
+    background-color: var(--cor-primaria);
+    font-family: var(--font);
+    padding: 24px;
+    text-align: center;
+    font-size: 1.5;
+    font-weight: 400;
+}
+
 @media (max-width: 950px) {
     .logo__nome {
         font-size: 1.2rem;
@@ -173,7 +182,6 @@ body {
     }
     .apresentacao {
         flex-direction: column;
-        
     }
 
     .apresentacao__conteudo {
